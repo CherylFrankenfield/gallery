@@ -1,13 +1,13 @@
  /*For testing only */
 
-*:not(body):not(html) {
+/**:not(body):not(html) {
   box-sizing:border-box;
   border:1px dashed #000;
 }
 
 .columns {
   min-height: 100px;
-}
+}*/
 
 /* End for testing */
 /*Standard CSS styles below*/
@@ -96,6 +96,39 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 250px) and (max-width: 767px) {
+  .photo {
+    display: block;
+    padding: 5px;
+  }
 
+  .photo img {
+    width: 80vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 300px;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px gray;
+  }
+
+  .nav ul {
+    list-style: none;
+    display: block;
+    width: 100%;
+    min-width: 230px;
+
+  }
+
+  .nav ul li {
+    display: inline-block;
+    padding: 5px;
+    margin: 2vw 4vw;
+    font-size: 17px;
+    color: blue;
+    text-align: center;
+
+  }
 }
