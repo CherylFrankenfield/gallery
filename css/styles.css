@@ -1,0 +1,51 @@
+ /*For testing only */
+
+*:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed #000;
+}
+
+.columns {
+  min-height: 100px;
+}
+
+/* End for testing */
+/*Standard CSS styles below*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.nav ul {
+  list-style: none;
+  float: right;
+}
+
+.nav ul li {
+  display: inline-block;
+  padding: 5px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.title {
+  clear: both;
+  text-align: center;
+  background-color: teal;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 767px) {
+
+}
