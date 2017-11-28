@@ -40,10 +40,60 @@
   margin: 10px;
 }
 
+.gallery {
+  width: 100vw;
+  padding: 20px 4vw 0 4vw;
+  overflow: hidden;
+  /*background-color: #f3bfea;*/
+}
+
+.photo {
+  float: left;
+  height: 400px;
+  padding: 5px;
+}
+
+.photo img {
+  width: 28vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 200px;
+  max-height: 375px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 4px 4px 10px gray;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    background-color: green;
 
+  }
+  .photo {
+    float: left;
+    height: 30vw;
+    padding: 5px;
+  }
+
+  .photo img {
+    width: 28vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 175px;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px gray;
+  }
 }
 
 @media screen and (max-width: 767px) {
